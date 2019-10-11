@@ -1,8 +1,14 @@
+import scrython
+
 class Card:
-    def __init__(self, name, num, owned):
+    def __init__(self, name, num, owned, expansion=None):
         self.name = name
         self.num = num
         self.owned = owned
+        if expansion:
+            self.expansion = expansion
+        else:
+            self.expansion = scrython.cards.Named(exact=name).
 
 
 class Deck:
