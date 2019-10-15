@@ -6,10 +6,7 @@ class Card:
         self.name = name
         self.num = num
         self.owned = owned
-        if expansion:
-            self.expansion = expansion
-        else:
-            self.expansion = scrython.cards.Named(exact=name).set_code()
+        self.expansion = expansion
 
 
 class Deck:
