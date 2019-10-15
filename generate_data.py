@@ -7,7 +7,7 @@ def generate_data():
         setfile.write('setcodes = {\n')
         sets = scrython.sets.Sets()
         for expansion in sets.data():
-            setfile.write(f'\"{expansion["code"]}\": \"{expansion["name"]}\",\n')
+            setfile.write(f'    \"{expansion["code"]}\": \"{expansion["name"]}\",\n')
         setfile.write('}')
 
 
