@@ -1,6 +1,3 @@
-import scrython
-
-
 class Card:
     def __init__(self, name, num, owned=0, expansion=None):
         self.name = name
